@@ -1,9 +1,10 @@
 { "name" : "supervisor"
 , "version" : "0.5.3"
 , "description" : "A supervisor program for running nodejs programs"
-, "author" : "Isaac Z. Schlueter <i@izs.me>"
+, "author" : "Neutra <neutra@qq.me>"
 , "contributors" :
-  [ "Todd Branchflower <toddbran@stanford.edu>"
+  [ "Isaac Z. Schlueter <i@izs.me>"
+  ,"Todd Branchflower <toddbran@stanford.edu>"
   , "Giannis Dzegoutanis <erasmospunk@gmail.com>"
   , "Brian Ehmann <behmann@gmail.com>"
   , "Corey Jewett <cj@syntheticplayground.com>"
@@ -27,14 +28,13 @@
   ]
 , "repository":
   { "type": "git"
-  , "url": "git://github.com/isaacs/node-supervisor.git"
+  , "url": "git://github.com/neutra/node-supervisor.git"
   }
-, "bugs": "https://github.com/isaacs/node-supervisor/issues"
-, "homepage": "https://github.com/isaacs/node-supervisor/"
+, "bugs": "https://github.com/neutra/node-supervisor/issues"
+, "homepage": "https://github.com/neutra/node-supervisor/"
 , "main" : "lib/supervisor.js"
 , "bin" :
-  { "node-supervisor" : "lib/cli-wrapper.js"
-  , "supervisor" : "lib/cli-wrapper.js"
+  { "supervisor" : "lib/cli-wrapper.js"
   }
 , "engines" : { "node" : ">=0.3.7" }
 , "preferGlobal" : true
