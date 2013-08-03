@@ -1,18 +1,27 @@
 # supervisor
 
-forked from isaacs/node-supervisor
+forked from [isaacs/node-supervisor](https://github.com/isaacs/node-supervisor)
 
-change: 
-1. remove watch feature, because is not a good idea for me
-2. use `supervisor [options] <program> [args ...]` instead of `supervisor [options] -- <program> [args ...]`
+i don't think auto restart program when some file change is a good idea in production envirment,  
+but i hope the program would auto restart when they crashed. so i first use node-supervisor like this command:
+
+    supervisor -w not-exists-dir -- myapp.js arg1 arg2
+
+and then, i fork this repo...
+
+## Changes:
+
+-   remove \-watch feature, and reduce code size
+
+-   use `supervisor [options] <program> [args ...]` instead of `supervisor [options] -- <program> [args ...]`
+
+## Introduction
 
 A little supervisor script for nodejs. It runs your program, and
 watches for code changes, so you can have hot-code reloading-ish
 behavior, without worrying about memory leaks and making sure you
 clean up all the inter-module references, and without a whole new
 `require` system.
-
-## Introduction
 
     Node Supervisor is used to restart programs when they crash.
 
@@ -60,5 +69,6 @@ Get this code, install npm, and then do this:
 ## todo
 
 1. rewrite the code using litcoffee
-2. send an email when crashed
-3. store the pid in file
+2. use another name and add to npm repo
+3. send email when crashed
+4. store the pid in file
