@@ -1,7 +1,7 @@
-{ "name" : "supervisor"
+{ "name" : "@neutra/supervisor"
 , "version" : "0.5.3"
 , "description" : "A supervisor program for running nodejs programs"
-, "author" : "Neutra <neutra@qq.me>"
+, "author" : "Neutra <neutra@qq.com>"
 , "contributors" :
   [ "Isaac Z. Schlueter <i@izs.me>"
   ,"Todd Branchflower <toddbran@stanford.edu>"
